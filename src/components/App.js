@@ -15,7 +15,7 @@ import useAccessToken from "../hooks/useAccessToken";
 const createApolloClient = (authToken) => {
   return new ApolloClient({
     link: new WebSocketLink({
-      uri: "wss://hasura.io/learn/graphql",
+      uri: "https://hasura.io/learn/graphql/graphiql",
       options: {
         reconnect: true,
         connectionParams: {
